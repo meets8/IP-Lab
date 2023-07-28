@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Playfair+Display&family=Ysabeau+SC&display=swap');
+/* https://coolors.co/eff1ed-373d20-717744-bcbd8b-766153 */
+/*  https://coolors.co/palette/780000-c1121f-fdf0d5-003049-669bbc */
+/* https://coolors.co/d782ba-e18ad4-eeb1d5-efc7e5-e0efda */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-text-color: #F8EBD6;
+    --secondary-text-color: #B6465F;
+    --accent-color: #BFA130;
+    --accent-color-dark: #A48927;
+    --padding-inline-section: 20px;
+    --background-color: #EFC7E5;
+}
+body {
+    font-family:'Playfair Display', sans-serif;
+    color:var(--primary-text-color);
+    background-color: var(--background-color);
+}
+.container {
+  max-width: 1180px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+/* NAV BAR */
+nav{
+    background-color: var(--background-color);
+    padding: 10px;
+}
+.main-nav {
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.nav-links {
+    flex-basis: 730px;
+}
+
+.nav-links ul{
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+}
+.hover-link {
+  color: var(--light-color);
+  color: var(--secondary-text-color);
+}
+.hover-link:hover{
+    color: var(--light-color);
+  transition-property: 0.2s ease-out;
+}
+
+.form-button{
+    width: 100px;
+    height: 30px;
+    background-color: var(--accent-color-dark);
+    border-radius: 10px;
+    color: var(--primary-text-color);
+}
+
+.form-section{
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    color: var(--secondary-text-color);
+}
+
+label, input {
+    padding: 10px;
+}
